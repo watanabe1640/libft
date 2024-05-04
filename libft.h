@@ -6,7 +6,7 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 18:06:45 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/04 18:21:10 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/05/04 18:38:16 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,6 @@ int		ft_isprint(int c);
 void	*ft_memset(void *ptr, int value, size_t num);
 size_t	ft_strlen(const char *s);
 char	ft_toupper(char c);
+void	ft_bzero(void *ptr, size_t num);
 
 #endif
