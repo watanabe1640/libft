@@ -1,24 +1,21 @@
-# ルートディレクトリでmakeを実行するとlibft.aが生成される
-# 生成されたlibft.aはルートディレクトリにコピーされる
+NAME = libft.a
+SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c ft_strlcpy.c ft_strlcat.c ft_memcpy.c ft_tolower.c ft_toupper.c ft_strchr.c
 
-name := libft.a
-srcs := ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c ft_strlcpy.c ft_strlcat.c ft_memcpy.c ft_tolower.c ft_toupper.c ft_strchr.c
+OBJS =$(SRCS:.c=.o)
 
-objs :=$(srcs:.c=.o)
+all: $(NAME)
 
-all: $(name)
-
-$(name): $(objs)
-	ar rcs $(name) $(objs)
-	ranlib $(name)
+$(NAME): $(OBJS)
+	ar rcs $(NAME) $(OBJS)
+	ranlib $(NAME)
 
 %.o: %.c
 	gcc -Wall -Wextra -Werror -c $< -o $@
 
 clean:
-	rm -f $(objs)
+	rm -f $(OBJS)
 
 fclean: clean
-	rm -f $(name)
+	rm -f $(NAME)
 
 re: fclean all

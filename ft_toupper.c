@@ -6,13 +6,13 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 16:14:31 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/04 17:56:59 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/05/19 13:46:43 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_toupper(char c)
+int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{
