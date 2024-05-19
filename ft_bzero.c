@@ -6,7 +6,7 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 18:25:36 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/04 18:37:53 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/05/19 11:28:58 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 void	ft_bzero(void *ptr, size_t num)
 {
 	unsigned char	*p;
-	int				i;
+	size_t			i;
 
 	i = 0;
 	p = ptr;
