@@ -6,13 +6,13 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 12:29:18 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/19 12:31:39 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/05/20 20:38:49 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	tolower(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (c + 32);

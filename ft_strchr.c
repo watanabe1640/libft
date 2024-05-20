@@ -6,7 +6,7 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 12:43:36 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/19 12:51:04 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/05/20 20:48:19 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,16 @@
 
 char	*ft_strchr(const char *s, int c)
 {
+	unsigned char	uc;
+
+	uc = (unsigned char)c;
 	while (*s != '\0')
 	{
-		if (*s == c)
+		if (*s == uc)
 			return ((char *)s);
 		s++;
 	}
-	if (*s == c)
+	if (*s == uc)
 		return ((char *)s);
 	return (NULL);
 }
