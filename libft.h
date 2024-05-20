@@ -6,7 +6,7 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 18:06:45 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/20 17:39:19 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/05/20 18:54:29 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,6 @@ int		ft_atoi(const char *str);
 void	*ft_calloc(size_t count, size_t size);
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *s1);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
 #endif
