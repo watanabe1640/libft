@@ -6,7 +6,7 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 18:06:45 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/21 12:26:11 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/05/21 12:31:53 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 # include <stdio.h>
 # include <libc.h>
 
+// srcs
 int		ft_isalnum(char c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
@@ -55,4 +56,5 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 #endif
