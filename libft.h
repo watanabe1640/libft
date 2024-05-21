@@ -6,7 +6,7 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 18:06:45 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/21 10:04:34 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/05/21 10:59:57 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,4 +49,5 @@ size_t	ft_strlcpy(char *restrict dst, const char *src, size_t dstsize);
 size_t	ft_strlcat(char *restrict dst, const char *src, size_t dstsize);
 int		ft_tolower(int c);
 char	**ft_split(char const *s, char c);
+char	*ft_itoa(int n);
 #endif
