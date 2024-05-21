@@ -6,13 +6,13 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 12:14:33 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/19 12:18:04 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/05/20 20:57:38 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
+size_t	ft_strlcat(char *restrict dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 	size_t	dst_len;
