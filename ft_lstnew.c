@@ -1,37 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/04 17:17:40 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/21 13:07:44 by taikwata         ###   ########.fr       */
+/*   Created: 2024/05/21 12:54:55 by taikwata          #+#    #+#             */
+/*   Updated: 2024/05/21 15:23:44 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+t_list	*ft_lstnew(void *content)
 {
-	size_t	i;
+	t_list	*new;
 
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
+	new = malloc(sizeof(t_list));
+	if (!new)
+		return (NULL);
+	new->content = content;
+	new->next = NULL;
+	return (new);
 }
 
-// #include <string.h>
-// #include <stdio.h>
-
-// int main(int argc, char const *argv[])
-// {
-// 	if (argc != 2)
-// 	{
-// 		return 0;
+// int main(void) {
+// 	t_list *node = ft_lstnew("Hello, world!");
+// 	if (node) {
+// 		printf("Content: %s\n", (char *)node->content);
+// 		printf("Next: %p\n", node->next);
 // 	}
-// 	printf("%lu\n", strlen(argv[1]));
-// 	printf("%lu\n", ft_strlen(argv[1]));
 // 	return 0;
 // }

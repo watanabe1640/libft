@@ -6,11 +6,10 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 18:00:09 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/04 18:23:54 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/05/21 13:07:14 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 void	*ft_memset(void *ptr, int value, size_t num)

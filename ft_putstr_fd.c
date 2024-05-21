@@ -6,7 +6,7 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 12:17:58 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/21 12:21:39 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/05/21 12:47:39 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_putstr_fd(char *s, int fd)
 {
 	size_t	len;
-	
+
 	len = ft_strlen(s);
 	write(fd, s, len);
 }

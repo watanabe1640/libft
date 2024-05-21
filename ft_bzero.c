@@ -6,12 +6,11 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 18:25:36 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/19 11:28:58 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/05/21 13:06:35 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
 
 void	ft_bzero(void *ptr, size_t num)
 {

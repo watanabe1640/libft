@@ -6,11 +6,10 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 18:39:09 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/19 10:35:38 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/05/21 13:07:06 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)

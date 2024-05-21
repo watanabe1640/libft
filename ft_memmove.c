@@ -6,11 +6,10 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 10:37:55 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/19 13:36:54 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/05/21 13:07:11 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
