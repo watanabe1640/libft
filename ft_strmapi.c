@@ -6,7 +6,7 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 11:39:17 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/21 11:44:56 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/05/21 12:15:48 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	if (!s || !f)
-		return (NULL);
 	size_t	len;
 	char	*str;
-	
+
+	if (!s || !f)
+		return (NULL);
 	len = ft_strlen(s);
 	str = malloc(sizeof(char) * (len + 1));
 	if (!str)
