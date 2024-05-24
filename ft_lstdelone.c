@@ -1,34 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/21 12:54:55 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/21 18:09:06 by taikwata         ###   ########.fr       */
+/*   Created: 2024/05/21 16:27:54 by taikwata          #+#    #+#             */
+/*   Updated: 2024/05/21 16:30:37 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	t_list	*new;
-
-	new = malloc(sizeof(t_list));
-	if (!new)
-		return (NULL);
-	new->content = content;
-	new->next = NULL;
-	return (new);
+	if (!lst || !del)
+		return ;
+	del(lst->content);
+	free(lst);
 }
-
-// int main(void) {
-// 	t_list *node = ft_lstnew("Hello, world!");
-// 	if (node) {
-// 		printf("Content: %s\n", (char *)node->content);
-// 		printf("Next: %p\n", node->next);
-// 	}
-// 	return 0;
-// }

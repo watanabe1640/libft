@@ -1,34 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/21 12:54:55 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/21 18:09:06 by taikwata         ###   ########.fr       */
+/*   Created: 2024/05/22 08:15:55 by taikwata          #+#    #+#             */
+/*   Updated: 2024/05/22 08:46:46 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *),void (*del)(void *))
 {
-	t_list	*new;
+	t_list	*new_list;
+	t_list	*added_list;
 
-	new = malloc(sizeof(t_list));
-	if (!new)
+	new_list = NULL;
+	if (!lst || !f)
 		return (NULL);
-	new->content = content;
-	new->next = NULL;
-	return (new);
+	while (lst)
+	{
+		added_list = ft_lstnew(f(lst->content));
+		if(added_list == NULL)
+		{
+			ft_lstclear(&new_list, del);
+			return (NULL);
+		}
+		ft_lstadd_back(&new_list, added_list);
+		lst = lst->next;
+	}
+	return (new_list);
 }
-
-// int main(void) {
-// 	t_list *node = ft_lstnew("Hello, world!");
-// 	if (node) {
-// 		printf("Content: %s\n", (char *)node->content);
-// 		printf("Next: %p\n", node->next);
-// 	}
-// 	return 0;
-// }
