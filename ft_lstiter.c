@@ -6,7 +6,7 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 19:32:44 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/21 20:02:58 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/05/24 21:46:58 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,9 +48,10 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 // {
 // 	t_list *list = ft_lstnew(ft_strdup("hello"));
 // 	t_list *next_list = ft_lstnew(ft_strdup("world"));
-	
+
 // 	list->next = next_list;
 // 	ft_lstiter(list, upcontent);
 // 	print_content(list);
 // }
-// // cc ft_lstiter.c ft_lstnew.c ft_toupper.c ft_strdup.c ft_memcpy.c ft_strlen.c 
+// // cc ft_lstiter.c ft_lstnew.c ft_toupper.c 
+// ft_strdup.c ft_memcpy.c ft_strlen.c 

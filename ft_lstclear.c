@@ -6,7 +6,7 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 17:59:08 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/21 19:18:27 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/05/24 21:48:10 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*dellst;
+
 	if (!lst || !del)
 		return ;
 	while (*lst)
@@ -39,7 +40,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 // 	ft_lstadd_back(&first_list, second_list);
 // 	ft_lstadd_back(&first_list,third_list);
 // 	ft_lstadd_back(&first_list,fourth_list);
-	
+
 // 	t_list *head = first_list; 
 // 	while (head->next != NULL)
 // 	{

@@ -6,7 +6,7 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 16:10:41 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/21 18:47:01 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/05/24 21:48:35 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*last;
-	
+
 	if (!lst || !new)
 		return ;
 	if (!*lst)
@@ -49,7 +49,8 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 // 	printf("head		: %s\n",(char *)(first_list->content));
 // 	printf("next		: %s\n",(char *)(first_list->next->content));
 // 	printf("next->next	: %s\n",(char *)(first_list->next->next->content));
-// 	printf("next->next	: %s\n",(char *)(first_list->next->next->next->content));
+// 	printf("next->next	: %s\n",(char *)(first_list->next->next
+// ->next->content));
 // 	printf("second		: %s\n",(char *)(second_list->content));
 // 	printf("third		: %s\n",(char *)(third_list->content));
 // 	printf("fourth		: %s\n",(char *)(fourth_list->content));
