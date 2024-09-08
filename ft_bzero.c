@@ -6,7 +6,7 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 18:25:36 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/21 13:06:35 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/09/08 08:45:46 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	ft_bzero(void *ptr, size_t num)
 // 	{
 // 		if(str[i] == '\0')
 // 		{
-// 			printf("NULL");
+// 			printf("NULL,");
 // 		}
 // 		else
 // 		{
@@ -52,15 +52,4 @@ void	ft_bzero(void *ptr, size_t num)
 // 		}
 // 		i++;
 // 	}
-// }	
-// 	//ft_bzeroについての説明のコメント文
-// 	/**
-// 	 * @brief メモリ領域をゼロクリアする関数です。
-// 	 *
-// 	 * @param ptr ゼロクリアするメモリ領域の先頭アドレスへのポインタ
-// 	 * @param num ゼロクリアするバイト数
-// 	 *
-// 	 * @details `ptr` が指すメモリ領域の先頭から `num` バイト分をゼロクリアします。
-// 	 */
-// 	return 0;
 // }
