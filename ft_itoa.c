@@ -6,7 +6,7 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 10:59:27 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/21 11:36:40 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/09/08 09:26:53 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,9 +64,9 @@ char	*ft_itoa(int n)
 	num_to_str(num, len, str);
 	return (str);
 }
-
+// // #include <stdlib.h>
 // int main() {
-// 	int num = -1234567890;
+// 	int num = -2147483648;
 // 	char *str = ft_itoa(num);
 // 	printf("Number: %d\nString: %s\n", num, str);
 // 	free(str);

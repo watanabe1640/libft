@@ -6,7 +6,7 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 19:13:42 by taikwata          #+#    #+#             */
-/*   Updated: 2024/09/08 08:43:01 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/09/08 10:12:36 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,10 @@ int	ft_atoi(const char *str)
 
 // #include <stdio.h>
 // int main() {
-// 	const char *str = "2147483648";
-// 	int result = atoi(str);
+// 	const char *str = " 	  -21474836499";
+// 	int result = ft_atoi(str);
+// 	int result_de = atoi(str);
 // 	printf("Result: %d\n", result);
+// 	printf("Result de: %d\n", result_de);
 // 	return 0;
 // }

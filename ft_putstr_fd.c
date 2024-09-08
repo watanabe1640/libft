@@ -6,7 +6,7 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 12:17:58 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/21 12:47:39 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/09/08 10:29:35 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	size_t	len;
 
+	if (!s)
+		return ;
 	len = ft_strlen(s);
 	write(fd, s, len);
 }
@@ -26,6 +28,7 @@ void	ft_putstr_fd(char *s, int fd)
 // int main() {
 //     // 文字列を標準出力に出力
 //     ft_putstr_fd("Hello, standard output!\n", 1);
+//     ft_putstr_fd(NULL, 1);
 
 //     // 文字列を標準エラー出力に出力
 //     ft_putstr_fd("Hello, standard error!\n", 2);

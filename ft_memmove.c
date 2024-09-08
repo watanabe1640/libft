@@ -6,7 +6,7 @@
 /*   By: taikwata <taikwata@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 10:37:55 by taikwata          #+#    #+#             */
-/*   Updated: 2024/05/21 13:07:11 by taikwata         ###   ########.fr       */
+/*   Updated: 2024/09/08 10:00:04 by taikwata         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,10 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 // #include <stdio.h>
 // #include <string.h>
 // int main() {
-//     char str[50] = "Hello, World!";
+//     char str[50] = "";
 //     // 文字列内で一部を5文字後ろに移動
-//     memmove(str+5, str, strlen(str) + 1);
+//     // ft_memmove(str+5, str, strlen(str) + 1);
+//     // memmove(str+5, str, strlen(str) + 1);
 //     printf("Modified string: %s\n", str);
 //     return 0;
 // }
